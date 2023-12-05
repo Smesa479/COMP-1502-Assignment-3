@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppManager">
+   <top>
+      <AnchorPane prefHeight="1000.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="lvnames" layoutX="277.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" />
+            <Button fx:id="btnDisplay" layoutX="60.0" layoutY="381.0" mnemonicParsing="false" onAction="#btnHandler" text="Display" />
+            <RadioButton fx:id="SN" layoutX="34.0" layoutY="118.0" mnemonicParsing="false" onAction="#SNS" prefHeight="18.0" prefWidth="109.0" text="Serial Number" />
+            <RadioButton fx:id="Name" layoutX="145.0" layoutY="118.0" mnemonicParsing="false" onAction="#Names" text="Name" />
+            <RadioButton fx:id="Type" layoutX="219.0" layoutY="118.0" mnemonicParsing="false" onAction="#Typesa" text="Type" />
+            <Text layoutX="34.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+            <TextField fx:id="NameFIeld" layoutX="70.0" layoutY="184.0" onAction="#NameFIields" promptText="Enter Name here" />
+            <Text layoutX="31.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serial Number" />
+            <TextField fx:id="SNSTD" layoutX="110.0" layoutY="214.0" onAction="#SNST" promptText="Enter Serial Number" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text layoutX="46.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+            <TextField fx:id="Types" layoutX="85.0" layoutY="265.0" promptText="Enter Type" />
+            <Button fx:id="btnClear" layoutX="163.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnHandlerC" text="Clear" />
+            <Button fx:id="btnBuy" layoutX="473.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnHandlerB" text="Buy" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
